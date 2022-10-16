@@ -11,7 +11,7 @@ export const NavBar = () => {
 
   return (
     <>
-      <nav className='w-full h-12 bg-white flex justify-between items-center px-4 font-body relative z-10'>
+      <nav className='w-full h-12 bg-white flex justify-between items-center px-4 font-body z-10'>
         {/* Toggle Menu */}
         <button className='h-5 lg:hidden' onClick={handleToggleMenu}>
           <FontAwesomeIcon icon={faBars} />

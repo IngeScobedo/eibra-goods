@@ -5,12 +5,12 @@ import { NavBar } from '../ui'
 
 export const ShopRoutes = () => {
   return (
-    <>
+    <div className='relative'>
       <NavBar />
       <Routes>
         <Route path='/carrito' element={<ShoppingCart />} />
         <Route path='/' element={<Home />} />
       </Routes>
-    </>
+    </div>
   )
 }

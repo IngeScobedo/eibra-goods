@@ -1,13 +1,14 @@
-import { Hero } from '../components/Hero'
+import { Hero, ProductsCarousel, PromoCarousel } from '../components'
 
 export const Home = () => {
   return (
-    <div className='w-full h-screen bg-slate-300 snap-y snap-mandatory overflow-scroll'>
+    <div className='w-full h-screen bg-white snap-y snap-mandatory overflow-scroll'>
       <div className='snap-center'>
         <Hero />
       </div>
-      <div className='w-full h-[200vh] snap-start'>
-        {/*  */}
+      <div className='w-full min-h-screen snap-start flex flex-col gap-5 md:gap-10'>
+        <PromoCarousel />
+        <ProductsCarousel />
       </div>
     </div>
   )
