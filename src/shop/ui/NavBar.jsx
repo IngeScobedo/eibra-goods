@@ -20,7 +20,7 @@ export const NavBar = () => {
         <Link to='/' className='font-gothic text-2xl absolute left-[50%] -translate-x-[50%] lg:relative lg:left-0 lg:-translate-x-0'>Eibra Goods</Link>
 
         <ul className='hidden w-auto lg:flex gap-4 text-center items-center'>
-          <li>Playeras</li>
+          <Link to='/productos/playeras'>Playeras</Link>
           <li>Hoddies</li>
           <li>Gorros</li>
         </ul>
@@ -38,7 +38,7 @@ export const NavBar = () => {
       <div className={`navbar ${clicked ? 'left-0' : '-left-[100vw]'}`}>
         <div className='w-[80vw] h-screen bg-white flex flex-col gap-2'>
           <ul className='w-full h-scren flex flex-col justify-center text-center items-center font-body'>
-            <li>Playeras</li>
+            <Link to='/productos/playeras'>Playeras</Link>
             <li>Hoddies</li>
             <li>Gorros</li>
           </ul>

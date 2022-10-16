@@ -6,7 +6,7 @@ export const Home = () => {
       <div className='snap-center'>
         <Hero />
       </div>
-      <div className='w-full snap-start flex flex-col gap-5 md:gap-10'>
+      <div className='w-full min-h-screen snap-start flex flex-col gap-5 md:gap-10'>
         <PromoCarousel />
         <ProductsCarousel />
       </div>
