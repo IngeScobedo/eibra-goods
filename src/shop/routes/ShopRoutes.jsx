@@ -1,7 +1,8 @@
 import React from 'react'
 import { Route, Routes } from 'react-router-dom'
-import { Home, ProductCategory, ShoppingCart } from '../pages'
+import { Home, ShoppingCart } from '../pages'
 import { NavBar } from '../ui'
+import { ProductRoutes } from './ProductRoutes'
 
 export const ShopRoutes = () => {
   return (
@@ -9,8 +10,8 @@ export const ShopRoutes = () => {
       <NavBar />
       <Routes>
         <Route path='/carrito' element={<ShoppingCart />} />
-        <Route path='/productos/:category' element={<ProductCategory />} />
         <Route path='/' element={<Home />} />
+        <Route path='/*' element={<ProductRoutes />} />
       </Routes>
     </div>
   )

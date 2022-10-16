@@ -61,11 +61,13 @@
     .products .swiper {
         width: 100%;
         height: 90vh;
-        /* height: calc(100vh - 48px); */
     }
 
-    .products .swiper-button-next,
+    .products .swiper-button-next {
+        right: 180px;
+    }
+
     .products .swiper-button-prev {
-        display: flex;
+        left: 180px;
     }
 }

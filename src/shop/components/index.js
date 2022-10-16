@@ -1,5 +1,6 @@
 export * from './Hero'
 export * from './promoCarousel/PromoCarousel'
 export * from './productsCarousel/ProductsCarousel'
+export * from './galleyCarousel/GalleryCarousel'
 export * from './ProductList'
 export * from './ProductCard'

@@ -1,5 +1,6 @@
-import { Swiper, SwiperSlide } from 'swiper/react'
+import { Link } from 'react-router-dom'
 import { Navigation } from 'swiper'
+import { Swiper, SwiperSlide } from 'swiper/react'
 import 'swiper/css'
 import 'swiper/css/pagination'
 import 'swiper/css/navigation'
@@ -26,13 +27,13 @@ export const ProductsCarousel = () => {
         {
           popular.map((product, index) => (
             <SwiperSlide key={index}>
-              <div className='w-full h-full flex flex-col'>
+              <Link to={`/producto/${product.name}`} className='w-full h-full flex flex-col'>
                 <img src={product.url} alt='logo' />
                 <div className='product-info'>
                   <h3 className='text-sm font-bold'>{product.name}</h3>
                   <h4 className='text-sm font-bold'>${product.price}</h4>
                 </div>
-              </div>
+              </Link>
             </SwiperSlide>
           ))
         }
