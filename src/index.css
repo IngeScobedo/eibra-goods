@@ -3,5 +3,10 @@
 @tailwind utilities;
 
 @layer components {
-    
+    .glass {
+        @apply  bg-gray-400 bg-clip-padding backdrop-filter backdrop-blur-sm bg-opacity-10;
+    }
+    .navbar {
+        @apply fixed top-12 w-full h-screen transition-all duration-500 flex;
+    }
 }
