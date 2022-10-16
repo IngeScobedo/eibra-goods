@@ -7,7 +7,8 @@ module.exports = {
   theme: {
     extend: {
       fontFamily: {
-        gothic: ['Cloister Black']
+        gothic: ['Cloister Black'],
+        body: ['Lato']
       }
     }
   },

@@ -1,5 +1,4 @@
 import { Hero } from '../components/Hero'
-import { NavBar } from '../ui'
 
 export const Home = () => {
   return (
@@ -8,7 +7,7 @@ export const Home = () => {
         <Hero />
       </div>
       <div className='w-full h-[200vh] snap-start'>
-        <NavBar />
+        {/*  */}
       </div>
     </div>
   )
