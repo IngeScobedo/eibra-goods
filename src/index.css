@@ -9,4 +9,7 @@
     .navbar {
         @apply fixed top-12 w-full h-screen transition-all duration-500 flex lg:hidden z-10;
     }
+    .product-info {
+        @apply flex flex-col items-center md:flex-row md:justify-center md:gap-2;
+    }
 }

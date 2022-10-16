@@ -19,6 +19,7 @@ export const ProductsCarousel = () => {
           delay: 5000,
           disableOnInteraction: false
         }}
+        loop
         slidesPerView={2}
         navigation
         modules={[Navigation]}
@@ -27,29 +28,37 @@ export const ProductsCarousel = () => {
         <SwiperSlide>
           <div className='w-full h-full flex flex-col'>
             <img src={playera1} alt='logo' />
-            <h3 className='text-sm font-bold'>Playera Kyoto</h3>
-            <h4 className='text-sm font-bold'>$650.00</h4>
+            <div className='product-info'>
+              <h3 className='text-sm font-bold'>Playera Kyoto</h3>
+              <h4 className='text-sm font-bold'>$650.00</h4>
+            </div>
           </div>
         </SwiperSlide>
         <SwiperSlide>
           <div className='w-full h-full flex flex-col'>
             <img src={playera2} alt='logo' />
-            <h3 className='text-sm font-bold'>Playera Kyoto</h3>
-            <h4 className='text-sm font-bold'>$650.00</h4>
+            <div className='product-info'>
+              <h3 className='text-sm font-bold'>Playera Kyoto</h3>
+              <h4 className='text-sm font-bold'>$650.00</h4>
+            </div>
           </div>
         </SwiperSlide>
         <SwiperSlide>
           <div className='w-full h-full flex flex-col'>
             <img src={playera1} alt='logo' />
-            <h3 className='text-sm font-bold'>Playera Kyoto</h3>
-            <h4 className='text-sm font-bold'>$650.00</h4>
+            <div className='product-info'>
+              <h3 className='text-sm font-bold'>Playera Kyoto</h3>
+              <h4 className='text-sm font-bold'>$650.00</h4>
+            </div>
           </div>
         </SwiperSlide>
         <SwiperSlide>
           <div className='w-full h-full flex flex-col'>
             <img src={playera2} alt='logo' />
-            <h3 className='text-sm font-bold'>Playera Kyoto</h3>
-            <h4 className='text-sm font-bold'>$650.00</h4>
+            <div className='product-info'>
+              <h3 className='text-sm font-bold'>Playera Kyoto</h3>
+              <h4 className='text-sm font-bold'>$650.00</h4>
+            </div>
           </div>
         </SwiperSlide>
       </Swiper>

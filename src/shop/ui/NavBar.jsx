@@ -11,7 +11,7 @@ export const NavBar = () => {
 
   return (
     <>
-      <nav className='w-full h-12 bg-white flex justify-between items-center px-4 font-body z-10'>
+      <nav className='w-full h-12 bg-white flex justify-between items-center px-4 font-body z-10 fixed top-0'>
         {/* Toggle Menu */}
         <button className='h-5 lg:hidden' onClick={handleToggleMenu}>
           <FontAwesomeIcon icon={faBars} />
@@ -37,7 +37,7 @@ export const NavBar = () => {
       </nav>
       <div className={`navbar ${clicked ? 'left-0' : '-left-[100vw]'}`}>
         <div className='w-[80vw] h-screen bg-white flex flex-col gap-2'>
-          <ul className='w-full h-[calc(100vh-48px)] flex flex-col justify-center text-center items-center font-body'>
+          <ul className='w-full h-scren flex flex-col justify-center text-center items-center font-body'>
             <li>Playeras</li>
             <li>Hoddies</li>
             <li>Gorros</li>
